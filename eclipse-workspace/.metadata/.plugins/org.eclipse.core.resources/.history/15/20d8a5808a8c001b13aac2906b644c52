@@ -1,0 +1,30 @@
+package Excepciones;
+
+public class Ej3 {
+	
+	public static void main(String args[]) {
+		 A a = new A();
+//		 try {
+//		 a.g();
+//		 } catch(Ej2ex e) {
+//		 e.imprimirmensaje();
+//		 }
+//		 }
+		}
+
+//class with a method that throws an exception of the type created in Exercise 2:
+	
+	class A {
+		public void f() {
+			// Compiler gives an error: "unreported
+			// exception MyException; must be caught
+			// or declared to be thrown"
+			// ! throw new MyException("Inside f()");
+		}
+
+		public void g() throws Ej2ex {
+			throw new Ej2ex("Inside g()");
+		}
+	}
+
+

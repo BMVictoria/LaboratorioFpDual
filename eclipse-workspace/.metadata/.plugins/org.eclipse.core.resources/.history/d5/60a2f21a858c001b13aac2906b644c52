@@ -1,0 +1,13 @@
+package Excepciones;
+
+public class Ej1 {
+	public static void main(String args[]) {
+		try {
+			throw new Exception("Hay una excepcion");
+		} catch (Exception e) {
+			System.out.println("e.getMessage() = " + e.getMessage());
+		} finally {
+			System.out.println("In finally clause");
+		}
+	}
+}

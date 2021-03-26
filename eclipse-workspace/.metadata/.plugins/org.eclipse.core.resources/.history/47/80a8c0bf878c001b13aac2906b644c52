@@ -1,0 +1,16 @@
+package Excepciones;
+
+public class Ej3 {
+	class Thrower {
+		 public void f() {
+		 // Compiler gives an error: "unreported
+		 // exception MyException; must be caught
+		 // or declared to be thrown"
+		 //! throw new MyException("Inside f()");
+		 }
+		 public void g() throws Ej2ex {
+		 throw new Ej2ex("Inside g()");
+		 }
+		} 
+
+}

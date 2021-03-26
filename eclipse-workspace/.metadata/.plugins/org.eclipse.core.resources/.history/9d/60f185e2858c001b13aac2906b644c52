@@ -1,0 +1,13 @@
+package Excepciones;
+
+public class Ej2 extends Exception {
+	 String mensaje;
+	 public Ej2(String mensaje) {
+	 this.mensaje = mensaje;
+	 }
+	 public void imprimirmensaje() {
+	 System.out.println("Mi mensaje de excepcion: " + mensaje);
+	 }
+	}
+
+}

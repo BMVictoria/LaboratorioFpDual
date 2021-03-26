@@ -1,0 +1,36 @@
+package Excepciones;
+
+public class Ej3 {
+
+	public static void main(String args[]) {
+		A a = new A();
+		try {
+			a.bien();
+		} catch (Ej2ex e) {
+			e.imprimirmensaje();
+		}
+	}
+
+	B b = new B()try
+	{
+		b.error();
+	}catch(Ej2ex e)
+	{
+		e.imprimirmensaje();
+	}
+}}
+
+//class with a method that throws an exception of the type created in Exercise 2:
+
+class A {
+
+	public void bien() throws Ej2ex {
+		throw new Ej2ex("Inside g()");
+	}
+
+class B {
+	public void error() {
+		throw new Ej2ex("Inside f()");
+		}
+	}
+}
